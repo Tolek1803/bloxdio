@@ -2,10 +2,55 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <meta http-equiv="refresh" content="0;URL='http://department-responsibility.gl.at.ply.gg:32138'" />
-    <title>Redirecting to Blox...</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Key Press Example</title>
+    <style>
+
+    </style>
 </head>
 <body>
-    <p>If you are not redirected automatically, <a href="http://department-responsibility.gl.at.ply.gg:32138">click here</a>.</p>
+    <div id="container"></div>
+
+    <script>
+        // Function to load the iframe content
+        function loadIframe() {
+            document.getElementById('container').innerHTML = `
+                <div class="css-znpcvs">
+                    <div class="css-72b909">
+                        <div class="GameContainer">
+                            <iframe id="game-iframe" src="https://games.crazygames.com/en_US/bloxdhop-io/index.html?v=1.288" title="Bloxd.io" scrolling="no" allow="autoplay; payment; fullscreen; microphone; focus-without-user-activation *; screen-wake-lock; gamepad; clipboard-read; clipboard-write; accelerometer; gyroscope; " allowfullscreen="" sandbox="allow-forms allow-modals allow-orientation-lock allow-pointer-lock allow-presentation allow-scripts allow-same-origin allow-downloads  allow-popups allow-popups-to-escape-sandbox" loading="eager" importance="high" data-hj-allow-iframe="true" style="border: 0px; margin: 0px; padding: 0px; width: 100%; height: 100%; position: absolute; top: 0px; left: 0px;">
+                                This is a first-class minecraft game that you can play on this page in your browser. You can play Bloxd.io unblocked on CrazyGames. This highly addictive .io game uses HTML5 to run smoothly in most browsers. This page contains detailed keyboard and mouse controls . That way, you can see how to play the game. If you enjoyed playing it, make sure to check out our other minecraft games or <a href='https://www.crazygames.com/game/dop-noob-draw-to-save' target='_blank'>DOP Noob: Draw to Save</a> and <a href='https://www.crazygames.com/game/noob-trolls-pro' target='_blank'>Noob Trolls Pro</a>.
+                            </iframe>
+                        </div>
+                    </div>
+                </div>
+            `;
+            console.log("Iframe loaded");
+        }
+
+        // Function to redirect to snappet.com
+        function redirectToSnappet() {
+            console.log("Redirecting to Snappet");
+            window.location.href = "https://www.snappet.com";
+        }
+
+        // Initialize a variable to keep track of key press
+        let keyPressed = false;
+
+        // Listen for keydown event
+        document.addEventListener('keydown', function(event) {
+            if (event.key === 'B' || event.key === 'b') {
+                keyPressed = true;
+                loadIframe();
+            }
+        });
+
+        // Set a timeout for 2 seconds to check if the key was pressed
+        setTimeout(function() {
+            if (!keyPressed) {
+                redirectToSnappet();
+            }
+        }, 2000);
+    </script>
 </body>
 </html>
