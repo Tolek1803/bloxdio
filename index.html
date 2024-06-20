@@ -10,9 +10,7 @@
 </head>
 <body>
     <div id="container"></div>
-
     <script>
-        // Function to load the iframe content
         function loadIframe() {
             document.getElementById('container').innerHTML = `
                 <div class="css-znpcvs">
@@ -27,25 +25,20 @@
             `;
             console.log("Iframe loaded");
         }
-
-        // Function to redirect to snappet.com
         function redirectToSnappet() {
             console.log("Redirecting to Snappet");
             window.location.href = "https://www.snappet.com";
         }
 
-        // Initialize a variable to keep track of key press
         let keyPressed = false;
 
-        // Listen for keydown event
         document.addEventListener('keydown', function(event) {
             if (event.key === 'B' || event.key === 'b') {
                 keyPressed = true;
                 loadIframe();
             }
         });
-
-        // Set a timeout for 2 seconds to check if the key was pressed
+        
         setTimeout(function() {
             if (!keyPressed) {
                 redirectToSnappet();
