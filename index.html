@@ -10,6 +10,7 @@
 </head>
 <body>
     <div id="container"></div>
+
     <script>
         function loadIframe() {
             document.getElementById('container').innerHTML = `
@@ -25,9 +26,10 @@
             `;
             console.log("Iframe loaded");
         }
+
         function redirectToSnappet() {
             console.log("Redirecting to Snappet");
-            window.location.href = "https://www.snappet.com";
+            window.location.href = "https://pupil.snappet.org/subjectGroups";
         }
 
         let keyPressed = false;
@@ -38,7 +40,6 @@
                 loadIframe();
             }
         });
-        
         setTimeout(function() {
             if (!keyPressed) {
                 redirectToSnappet();
