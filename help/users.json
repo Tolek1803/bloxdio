@@ -1,0 +1,24 @@
+{
+  "1112728810375356537": {
+    "id": "1112728810375356537",
+    "username": "tolek3.0",
+    "avatar": "9e94f3a25ce6b90a68bc5f17873e933b",
+    "discriminator": "0",
+    "public_flags": 4194432,
+    "flags": 4194432,
+    "banner": null,
+    "accent_color": 12571644,
+    "global_name": "Sayori",
+    "avatar_decoration_data": null,
+    "banner_color": "#bfd3fc",
+    "clan": {
+      "identity_guild_id": "1095388393673863258",
+      "identity_enabled": true,
+      "tag": "SOUP",
+      "badge": "40a7aa796426347d6b76d20dfed2c273"
+    },
+    "mfa_enabled": false,
+    "locale": "en-US",
+    "premium_type": 0
+  }
+}
